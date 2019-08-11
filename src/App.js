@@ -1,26 +1,26 @@
-import React from 'react';
+import React, {Component} from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import CardList from "./Components/CardList";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component{
+    state={
+        projects:[
+            {
+                name: 'Twitch-TLS',
+                url: 'https://twitch-tls.herokuapp.com/',
+                pic: 'images/twitchtls.gif'
+            }
+        ]
+    }
+
+  render(){
+    return (
+        <div className="App">
+            <CardList projects = {this.state.projects}/>
+        </div>
+    );
+  }
 }
 
 export default App;
