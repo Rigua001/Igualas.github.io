@@ -9,7 +9,7 @@ class App extends Component{
             {
                 name: 'Twitch-TLS',
                 url: 'https://twitch-tls.herokuapp.com/',
-                pic: 'images/twitchtls.gif'
+                pic: 'images/optimize.gif'
             }
         ]
     }

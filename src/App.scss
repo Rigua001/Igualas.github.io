@@ -1,3 +1,14 @@
+//$myPic:"./Components/images/optimize.gif";
+
+.parallax {
+//  background-image: url($myPic);
+  height: 900px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .App {
   text-align: center;
 }
